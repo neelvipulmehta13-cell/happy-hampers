@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #4E3F3A;
+  background-color: #FFF9F6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+::selection {
+  background-color: #D9B66F;
+  color: #FFF9F6;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF9F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #EADFCF;
+  border-radius: 999px;
+  border: 2px solid #FFF9F6;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D9B66F;
+}
+
+/* Sticky glass navbar */
+.glass-nav {
+  background: rgba(255, 249, 246, 0.7);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border-bottom: 1px solid rgba(78, 63, 58, 0.06);
+}
+
+/* Hand-stitched thread divider — the brand's recurring "tied together" motif */
+.thread-divider {
+  height: 2px;
+  background-image: linear-gradient(90deg, #D9B66F 55%, transparent 45%);
+  background-size: 14px 2px;
+  background-repeat: repeat-x;
+  opacity: 0.55;
+}
+
+/* Soft blurred background blob */
+.bg-blob {
+  filter: blur(50px);
+  opacity: 0.55;
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #4E3F3A 0%, #D9B66F 50%, #4E3F3A 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+.card-paper {
+  background: linear-gradient(155deg, #FFFDFB 0%, #FFF9F6 100%);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #B8944C;
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
