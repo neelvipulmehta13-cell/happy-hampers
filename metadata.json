@@ -1,0 +1,6 @@
+{
+  "name": "The Happy Hampers",
+  "description": "Handcrafted Indian gifting website featuring custom hampers, occasion search, personalization, interactive hamper builder, admin product manager, and WhatsApp order flow.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
